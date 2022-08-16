@@ -29,7 +29,8 @@ class _NewListItemState extends State<NewListItem> {
               child: const Text("Save New Note"),
                 onPressed: (){
               //Code for saving the new note here
-            })
+            }),
+
           ],),
         ));
   }

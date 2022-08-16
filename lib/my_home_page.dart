@@ -45,12 +45,17 @@ class _MyHomePageState extends State<MyHomePage> {
                     )),
                 onTap: (){
                   //Navigate to second screen
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const NewListItem()),
-                  );
                 },
               );
-            }));
+            }),
+        floatingActionButton: FloatingActionButton(
+          onPressed: (){
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const NewListItem()),
+            );
+          },
+          child: const Icon(Icons.add),
+        ));
   }
 }
